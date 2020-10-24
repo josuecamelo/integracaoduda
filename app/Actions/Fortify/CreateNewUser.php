@@ -33,8 +33,6 @@ class CreateNewUser implements CreatesNewUsers
                 'name' => $input['name'],
                 'email' => $input['email'],
                 'password' => Hash::make($input['password']),
-
-                'uuid' => Uuid::uuid4() // importante gerar UUID para Identificar o User no Duda
             ]), function (User $user) {
                 $this->createTeam($user);
             });
