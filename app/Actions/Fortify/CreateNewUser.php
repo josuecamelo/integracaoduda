@@ -28,13 +28,12 @@ class CreateNewUser implements CreatesNewUsers
             'password' => $this->passwordRules(),
         ])->validate();
 
-        dd($input);
-
         return DB::transaction(function () use ($input) {
             return tap(User::create([
                 'name' => $input['name'],
                 'email' => $input['email'],
                 'password' => Hash::make($input['password']),
+                'whatsapp' => $input['whatsapp']
             ]), function (User $user) {
                 $this->createTeam($user);
             });

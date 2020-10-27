@@ -70,9 +70,6 @@
             margin-top: 20px;
             margin-bottom: 5px;
         }
-        input{
-            width: 100% !important;
-        }
     </style>
 </head>
 <body>
