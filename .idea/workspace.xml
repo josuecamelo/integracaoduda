@@ -21,6 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2ab88b26-fbff-4b95-afec-60005d2ca0a3" name="Default Changelist" comment="Ajustes de Layouts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/vendor/jetstream/components/authentication-card.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/jetstream/components/authentication-card.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -232,7 +234,7 @@
       <workItem from="1603654935020" duration="2513000" />
       <workItem from="1603706313898" duration="682000" />
       <workItem from="1603707543110" duration="13015000" />
-      <workItem from="1603799363685" duration="4852000" />
+      <workItem from="1603799363685" duration="5532000" />
     </task>
     <task id="LOCAL-00001" summary="Primeiro Commit Projeto">
       <created>1603560361098</created>
@@ -262,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603803911264</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Ajustes de Layouts">
+      <created>1603804242038</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603804242038</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
