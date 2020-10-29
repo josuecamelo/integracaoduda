@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSitesTable extends Migration
+class AlterTableSites extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,16 @@ class CreateSitesTable extends Migration
      */
     public function up()
     {
-        Schema::create('sites', function (Blueprint $table) {
-            $table->increments('id');
-            $table->bigInteger('user_id')->unsigned();
-            //$table->bigInteger('plan_id')->unsigned();
-            $table->string('site_name');
-            $table->timestamps();
+        Schema::table('sites', function(Blueprint $table)
+        {
+            $table->foreign('user_id')
+                ->references('id')
+                ->on('users');
+
+            /*$table->foreign('plan_id')
+                ->references('id')
+                ->on('plans');*/
+
         });
     }
 
@@ -29,6 +33,6 @@ class CreateSitesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sites');
+        //
     }
 }

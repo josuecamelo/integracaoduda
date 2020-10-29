@@ -24,3 +24,5 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 
 Route::get('/novo-site', [\App\Http\Controllers\SiteController::class, 'create'])->name('novo-site');
+
+Route::get('/sites', \App\Http\Livewire\Site::class)->name('site');

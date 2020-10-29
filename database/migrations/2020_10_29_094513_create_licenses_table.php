@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSitesTable extends Migration
+class CreateLicensesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class CreateSitesTable extends Migration
      */
     public function up()
     {
-        Schema::create('sites', function (Blueprint $table) {
-            $table->increments('id');
+        Schema::create('licenses', function (Blueprint $table) {
+            $table->id();
             $table->bigInteger('user_id')->unsigned();
-            //$table->bigInteger('plan_id')->unsigned();
-            $table->string('site_name');
+            $table->bigInteger('site_id')->unsigned();
+            $table->date('initial_date');
+            $table->date('end_date');
             $table->timestamps();
         });
     }
@@ -29,6 +30,6 @@ class CreateSitesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sites');
+        Schema::dropIfExists('licenses');
     }
 }

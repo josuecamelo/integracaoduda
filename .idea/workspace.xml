@@ -20,9 +20,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ab88b26-fbff-4b95-afec-60005d2ca0a3" name="Default Changelist" comment="Ajustes de Layouts">
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Site.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Licence.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Site.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Template.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/CategoryFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_29_092258_create_categories_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_29_093428_create_templates_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_29_094513_create_licenses_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_29_145148_create_plans_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_29_145255_alter_table_sites.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_29_145626_alter_table_templates.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_29_145917_alter_table_licenses.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/CategorySeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/PlanSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/UserSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/dashboard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/icon open-browser.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/logobranco.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/test/img1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/sites/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel8livewire.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel8livewire.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade-old.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SiteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Trails/DudaApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Trails/DudaApi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_23_113012_create_sites_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_23_113012_create_sites_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/guest.blade-old.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/create-team-form.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/create.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,6 +200,7 @@
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
       <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/jantinnerezo/livewire-alert" />
     </include_path>
   </component>
   <component name="ProjectId" id="1j8nH8SBSzV4vut4xkil3nLzYaT" />
@@ -175,7 +212,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/auth" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/factories" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -188,15 +225,16 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\htdocs\laravel8livewire\resources\views\livewire\sites" />
       <recent name="D:\htdocs\laravel8livewire\public\img" />
       <recent name="D:\htdocs\laravel8livewire\public" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\htdocs\laravel8livewire\resources\views\auth" />
+      <recent name="D:\htdocs\laravel8livewire\database\factories" />
+      <recent name="D:\htdocs\laravel8livewire\public\img\test" />
       <recent name="D:\htdocs\laravel8livewire\public\img" />
-      <recent name="D:\htdocs\laravel8livewire\resources" />
+      <recent name="D:\htdocs\laravel8livewire\public\css" />
       <recent name="D:\htdocs\laravel8livewire\resources\views\layouts" />
-      <recent name="D:\htdocs\laravel8livewire\resources\views\site" />
     </key>
   </component>
   <component name="RunManager">
@@ -233,7 +271,10 @@
       <workItem from="1603654935020" duration="2513000" />
       <workItem from="1603706313898" duration="682000" />
       <workItem from="1603707543110" duration="13015000" />
-      <workItem from="1603799363685" duration="7908000" />
+      <workItem from="1603799363685" duration="24103000" />
+      <workItem from="1603878072050" duration="10071000" />
+      <workItem from="1603894807290" duration="225000" />
+      <workItem from="1603973792702" duration="12827000" />
     </task>
     <task id="LOCAL-00001" summary="Primeiro Commit Projeto">
       <created>1603560361098</created>
@@ -284,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603820749926</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Ajustes de Layouts">
+      <created>1603821280928</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1603821280928</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,14 +360,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603284007206" />
-    <state x="690" y="277" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603230147503">
+    <state x="690" y="277" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603840810688">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="277" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603230147503" />
-    <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1603799730662">
+    <state x="690" y="277" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603840810688" />
+    <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1603977764293">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603799730662" />
+    <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603977764293" />
     <state x="763" y="264" key="NewPhpClassDialog" timestamp="1603229701554">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -328,10 +376,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="451" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603284019707" />
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1603820762699">
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1603821285346">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603820762699" />
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603821285346" />
     <state x="669" y="271" width="581" height="498" key="find.popup" timestamp="1603801841515">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

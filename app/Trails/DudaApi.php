@@ -193,4 +193,34 @@ trait DudaApi{
 
         return $json;
     }
+
+    /*
+     * Get All Templates
+     * */
+
+    public function getAllTemplates() {
+        $url = env("DUDA_BASE_URL").'sites/multiscreen/templates';
+        $authorization = env('DUDA_USER').':'.env('DUDA_SECRET');
+
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_USERPWD, $authorization);
+        curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
+        //execute cURL call
+        $output = curl_exec($ch);
+
+        //check result for correct HTTP code
+        if(curl_getinfo($ch,CURLINFO_HTTP_CODE) == 200) {
+            curl_close($ch);
+            return $output;
+        } else {
+            curl_close($ch);
+            http_response_code(400);
+            die('Error getting templates details: '. $output . '<br/>');
+        }
+    }
 }

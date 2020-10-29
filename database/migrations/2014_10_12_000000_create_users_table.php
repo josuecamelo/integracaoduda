@@ -23,6 +23,7 @@ class CreateUsersTable extends Migration
             $table->foreignId('current_team_id')->nullable();
             $table->text('profile_photo_path')->nullable();
             $table->text('whatsapp');
+            $table->char('is_admin', 1)->default(0);
             $table->timestamps();
         });
     }
