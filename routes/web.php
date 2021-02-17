@@ -26,3 +26,8 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::get('/novo-site', [\App\Http\Controllers\SiteController::class, 'create'])->name('novo-site');
 
 Route::get('/sites', \App\Http\Livewire\Site::class)->name('site');
+
+
+Route::get('/wp/1', [\App\Http\Controllers\SiteController::class, 'index'])->name('teste');
+Route::get('/wp/2', [\App\Http\Controllers\SiteController::class, 'sendMessage'])->name('sendMessage');
+

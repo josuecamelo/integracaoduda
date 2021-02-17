@@ -12,7 +12,7 @@ class Site extends Component
     use WithPagination, LivewireAlert;
 
     private $sites = [];
-
+    public $search;
     public function __construct($id = null, \App\Models\Site $sites)
     {
         parent::__construct($id);
@@ -22,7 +22,8 @@ class Site extends Component
     public function render()
     {
         $this->sites = $this->sites
-            ->paginate(5);
+
+            ->get();
 
         return view('livewire.sites.index', [
             'sites' => $this->sites

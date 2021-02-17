@@ -14,6 +14,8 @@
         Meus Sites
     </p>
 
+    <input type="text" wire:model="search" />
+    {{ $search  }}
     <div class="mt-8">
         <div class="w-full rounded overflow-hidden">
             <ul>
