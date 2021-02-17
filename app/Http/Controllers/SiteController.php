@@ -64,7 +64,7 @@ class SiteController extends Controller
             CURLOPT_CUSTOMREQUEST => 'POST',
             //CURLOPT_POSTFIELDS => array('remotejid' => $phoneNumber,'text' => $message),
             CURLOPT_HTTPHEADER => array(
-                'Authorization: Bearer QulmsDDTe6FeB7oRt6kYgKCJRWpQJT09WiT68eF7nO2P4Hfr2xy2e4AkPeli'
+                'Authorization: Bearer '
             ),
         ));
 
@@ -106,7 +106,7 @@ class SiteController extends Controller
             CURLOPT_CUSTOMREQUEST => 'POST',
             CURLOPT_POSTFIELDS => '['.$dados.']',
             CURLOPT_HTTPHEADER => array(
-                'Authorization: Bearer QulmsDDTe6FeB7oRt6kYgKCJRWpQJT09WiT68eF7nO2P4Hfr2xy2e4AkPeli',
+                'Authorization: Bearer ',
                 'Content-Type: application/json'
             ),
         ));
