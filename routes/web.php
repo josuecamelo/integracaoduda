@@ -13,21 +13,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    //return view('welcome');
-    return redirect()->route('login');
-});
+/*Route::get('/', function () {
+    return view('welcome');
+    //return redirect()->route('login');
+});*/
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
+/*Route::get('/novo-site', [\App\Http\Controllers\SiteController::class, 'create'])->name('novo-site');
+Route::get('/sites', \App\Http\Livewire\Site::class)->name('site');*/
 
-Route::get('/novo-site', [\App\Http\Controllers\SiteController::class, 'create'])->name('novo-site');
+Route::get('/', [\App\Http\Controllers\SiteController::class, 'index'])->name('teste');
+//Route::post('/wp/enviar-mensagem', [\App\Http\Controllers\SiteController::class, 'sendMessage'])->name('sendMessage');
 
-Route::get('/sites', \App\Http\Livewire\Site::class)->name('site');
 
 
-Route::get('/wp/1', [\App\Http\Controllers\SiteController::class, 'index'])->name('teste');
-Route::get('/wp/2', [\App\Http\Controllers\SiteController::class, 'sendMessage'])->name('sendMessage');
+
+//Route::get('lerarquivo', [\App\Http\Controllers\SiteController::class, 'lerArquivo'])->name('lerArquivo');
+
+
 

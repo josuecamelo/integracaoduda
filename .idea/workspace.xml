@@ -20,8 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ab88b26-fbff-4b95-afec-60005d2ca0a3" name="Default Changelist" comment="Migrations, etc...">
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/layout_main.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SiteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +176,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pagefy" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -246,7 +248,13 @@
       <workItem from="1605122383216" duration="150000" />
       <workItem from="1605382917891" duration="321000" />
       <workItem from="1613573173776" duration="1160000" />
-      <workItem from="1613583540083" duration="5313000" />
+      <workItem from="1613583540083" duration="5741000" />
+      <workItem from="1613590223932" duration="5579000" />
+      <workItem from="1613679539631" duration="735000" />
+      <workItem from="1613680577178" duration="1927000" />
+      <workItem from="1613745302895" duration="4000" />
+      <workItem from="1613754192675" duration="155000" />
+      <workItem from="1615224385889" duration="137000" />
     </task>
     <task id="LOCAL-00001" summary="Primeiro Commit Projeto">
       <created>1603560361098</created>

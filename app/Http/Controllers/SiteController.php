@@ -64,7 +64,7 @@ class SiteController extends Controller
             CURLOPT_CUSTOMREQUEST => 'POST',
             //CURLOPT_POSTFIELDS => array('remotejid' => $phoneNumber,'text' => $message),
             CURLOPT_HTTPHEADER => array(
-                'Authorization: Bearer '
+                'Authorization: Bearer QulmsDDTe6FeB7oRt6kYgKCJRWpQJT09WiT68eF7nO2P4Hfr2xy2e4AkPeli'
             ),
         ));
 
@@ -81,8 +81,10 @@ class SiteController extends Controller
 
     public function sendMessage()
     {
+        $data = request()->all();
+
         $dados = json_encode(array (
-            'phone' => '5562992393275',
+            'phone' => '',
             'message' => 'Olá mundo! Testando 123',
             'bot_id' => 4373,
             'meta' => 'categoria-bot|identificador-5156444',
@@ -106,7 +108,7 @@ class SiteController extends Controller
             CURLOPT_CUSTOMREQUEST => 'POST',
             CURLOPT_POSTFIELDS => '['.$dados.']',
             CURLOPT_HTTPHEADER => array(
-                'Authorization: Bearer ',
+                'Authorization: Bearer QulmsDDTe6FeB7oRt6kYgKCJRWpQJT09WiT68eF7nO2P4Hfr2xy2e4AkPeli',
                 'Content-Type: application/json'
             ),
         ));
@@ -118,5 +120,48 @@ class SiteController extends Controller
         $data = json_decode($response);
 
         dd($data);
+    }
+
+    public function lerArquivo(){
+        $stream = fopen('http://www.umass.edu/microbio/rasmol/country-.txt', 'r');
+        $lineCount = 0;
+        $countries = [];
+        while (!feof($stream)) {
+            $linha =  fgets($stream);
+            if($lineCount >= 3){
+                $country = explode(' ', $linha);
+                if(isset($country[3])){
+                    $countryName = trim(preg_replace('/\s\s+/', ' ', $country[3]));
+                    $countries[] = [
+                        'codigo' => $country[0],
+                        'pais' => $countryName
+                    ];
+                }
+            }
+            $lineCount++;
+        }
+        fclose($stream);
+
+
+
+
+        usort($countries, function($a, $b) {
+            return $a['pais'] <=> $b['pais'];
+        });
+
+
+        $output = fopen("php://output", "w");
+        fputcsv($output, array('Nome do país', 'Código do país'));
+        foreach($countries as $row){
+            //fputcsv($output, $row);
+            fputcsv($output,$row, ";");
+        }
+        fclose($output);
+
+        /* Download as CSV File */
+
+        header('Content-Type: text/csv');
+        header('Content-Type: text/html; charset=utf-8');
+        header('Content-Disposition: attachment; filename="' . 'countries.csv' . '";');
     }
 }
